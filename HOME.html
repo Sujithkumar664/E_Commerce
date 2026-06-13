@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body{
+            background:#f4f6f9;
+        }
+
+        /* Navbar */
+        .navbar{
+            background:linear-gradient(90deg,#0d6efd,#0a58ca);
+            padding:15px 0;
+        }
+
+        .navbar-brand{
+            font-size:28px;
+            font-weight:700;
+            color:white !important;
+        }
+
+        .nav-link{
+            color:white !important;
+            font-size:16px;
+            margin:0 10px;
+            position:relative;
+            transition:0.3s;
+        }
+
+        .nav-link::after{
+            content:'';
+            width:0;
+            height:2px;
+            background:white;
+            position:absolute;
+            left:0;
+            bottom:-5px;
+            transition:0.3s;
+        }
+
+        .nav-link:hover::after{
+            width:100%;
+        }
+
+        .search-box{
+            border-radius:25px;
+            border:none;
+            padding:8px 15px;
+        }
+
+        .btn-login{
+            background:white;
+            color:#0d6efd;
+            border-radius:25px;
+            padding:8px 20px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .btn-login:hover{
+            background:#e9ecef;
+        }
+    </style>
+</head>
+<body>
+        <div class="navbar-content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+
+                    <!-- Logo -->
+                    <a class="navbar-brand" href="#">
+                        KABI
+                    </a>
+
+                    <!-- Mobile Toggle Button -->
+                    <button class="navbar-toggler bg-white" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse" id="navbarContent">
+
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+
+                        <!-- Search Box -->
+                        <form class="d-flex me-3">
+                            <input class="form-control search-box" type="search" placeholder="Search">
+                        </form>
+
+                        <!-- Login Button -->
+                        <button class="btn btn-login">
+                            Login/Sign up
+                        </button>
+
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    
+</body>
+</html>
